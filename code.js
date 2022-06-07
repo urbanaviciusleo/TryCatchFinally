@@ -52,7 +52,10 @@ function clickNumberButton(){
     }
     catch(erro){
         document.getElementById("outputnumber").innerHTML = erro;
-        throw 'Erro ' + erro;
+        if(erro != "informe um valor" && erro != "Informe um valor entre 5 a 10"){
+        throw "Erro + erro javascript";
+        }
+        alert(erro)
     }
     finally{
         throw "O número escolhido foi " + number
